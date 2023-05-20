@@ -9,8 +9,12 @@ import UIKit
 
 final class ViewController: UIViewController {
 
+    var model = CardModel()
+    var cardArray = [Card]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        cardArray = model.getCards()
     }
 }
