@@ -12,4 +12,9 @@ final class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var frontImageView : UIImageView!
     @IBOutlet weak var backImageView : UIImageView!
     
+    static let identifier : String = "CardCollectionViewCell"
+    static func nib() -> UINib {
+        return UINib(nibName: CardCollectionViewCell.identifier, bundle: .main)
+    }
+    
 }

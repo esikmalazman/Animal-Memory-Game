@@ -66,9 +66,8 @@
 				7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */,
 				7FAF4A702A19679D005CDD85 /* ViewController.swift */,
 				7FAF4A852A197B45005CDD85 /* CardCollectionViewCell.swift */,
+				7FF459592A19DD1A005AA471 /* Screens */,
 				7FAF4A842A197AF0005CDD85 /* Model */,
-				7FAF4A722A19679D005CDD85 /* Main.storyboard */,
-				7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */,
 				7FAF4A752A19679F005CDD85 /* Assets.xcassets */,
 				7FAF4A7A2A19679F005CDD85 /* Info.plist */,
 			);
@@ -82,6 +81,15 @@
 				7FAF4A802A1975EC005CDD85 /* CardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7FF459592A19DD1A005AA471 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */,
+				7FAF4A722A19679D005CDD85 /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
