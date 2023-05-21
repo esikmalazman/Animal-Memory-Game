@@ -39,16 +39,39 @@ final class CardCollectionViewCell: UICollectionViewCell {
     }
     
     func flippedBack() {
-        UIView.transition(
-            from: frontImageView,
-            to: backImageView,
-            duration: 0.3,
-            options: [.transitionFlipFromRight, .showHideTransitionViews])
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            UIView.transition(
+                from: self.frontImageView,
+                to: self.backImageView,
+                duration: 0.3,
+                options: [.transitionFlipFromRight, .showHideTransitionViews])
+        }
+    }
+    
+    func remove() {
+        // Remove both images from visible
+        backImageView.alpha = 0
+        
+        UIView.animate(withDuration: 0.3, delay: 0.5, options: .curveEaseOut) {
+            self.frontImageView.alpha = 0
+        }
     }
 }
 private extension CardCollectionViewCell {
     func validateCardState(_ card : Card) {
+        // Validate the card to display in correct alpha state
+        if card.isMatched {
+            frontImageView.alpha = 0
+            backImageView.alpha = 0
+            return
+        } else {
+            frontImageView.alpha = 1
+            backImageView.alpha = 1
+        }
         
+        
+        // Validate the card to display in correct flip state
         if card.isFlipped {
             // Make sure front image in on top
             UIView.transition(from: backImageView, to: frontImageView, duration: 0, options: [.transitionFlipFromRight, .showHideTransitionViews])
