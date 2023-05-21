@@ -29,7 +29,10 @@ extension ViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as! CardCollectionViewCell
+        let card = cardArray[indexPath.row]
+        
+        cell.setCard(card)
         return cell
     }
 }
@@ -37,5 +40,18 @@ extension ViewController : UICollectionViewDataSource {
 extension ViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Card on index : \(indexPath.row) selected")
+        
+        // Get selected cell from collection view
+        let selectedCell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
+        let selectedCard = cardArray[indexPath.row]
+        
+        // Flip or UnFlip the card 
+        if selectedCard.isFlipped == false {
+            selectedCell.flip()
+            selectedCard.isFlipped = true
+        } else {
+            selectedCell.flippedBack()
+            selectedCard.isFlipped = false
+        }
     }
 }
