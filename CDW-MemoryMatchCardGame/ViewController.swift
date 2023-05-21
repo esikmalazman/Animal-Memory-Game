@@ -26,6 +26,11 @@ final class ViewController: UIViewController {
         return miliseconds > 0
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        SoundManager.playSound(.shuffle)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -39,7 +44,7 @@ final class ViewController: UIViewController {
                                      userInfo: nil,
                                      repeats: true)
         // Make the timer run even the user scroll or not, so timer not stop. By default, it will stop because it is on default RunLoop mode
-        RunLoop.main.add(timer!, forMode: .common)
+        RunLoop.main.add(timer!, forMode: .tracking)
     }
     
     // Method will active everytime timer elapse from 1 miliseconds
@@ -89,6 +94,8 @@ extension ViewController : UICollectionViewDelegate {
         
         // Flip or UnFlip the card
         if selectedCard.isFlipped == false && selectedCard.isMatched == false {
+            SoundManager.playSound(.flip)
+            
             selectedCell.flip()
             selectedCard.isFlipped = true
             
@@ -134,9 +141,10 @@ extension ViewController {
             cardOneCell?.remove()
             cardTwoCell?.remove()
             
+            SoundManager.playSound(.match)
+            
             // Check if there's any card left unmatched
             checkedGameEnded()
-            
         } else {
             // Cards not Matched
             
@@ -148,6 +156,7 @@ extension ViewController {
             cardOneCell?.flippedBack()
             cardTwoCell?.flippedBack()
             
+            SoundManager.playSound(.noMatch)
         }
         
         // Tell collectionView to reload cell of first card if its index empty
