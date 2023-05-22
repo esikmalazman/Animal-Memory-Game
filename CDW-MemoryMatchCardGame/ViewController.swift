@@ -7,6 +7,14 @@
 
 import UIKit
 
+#warning("""
+TODO'S :
+1. Show new screen with correct match
+2. Allow to play how the animal pronounce
+3. OPTIONAL : Allow to view the animal in AR
+4. OPTIONAL : Specifically do for endangered animals otherwise general animal would do
+""")
+
 final class ViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
