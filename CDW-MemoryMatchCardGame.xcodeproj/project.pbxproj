@@ -12,6 +12,7 @@
 		7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E72A1ABADD0030F66C /* cardflip.wav */; };
 		7F65F2EC2A1ABADD0030F66C /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E82A1ABADD0030F66C /* dingwrong.wav */; };
 		7F65F2EE2A1ABAEC0030F66C /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65F2ED2A1ABAEC0030F66C /* SoundManager.swift */; };
+		7F6DCF652A21D459006E86D1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCF642A21D459006E86D1 /* Presenter.swift */; };
 		7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */; };
 		7FAF4A6F2A19679D005CDD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */; };
 		7FAF4A712A19679D005CDD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A702A19679D005CDD85 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		7F65F2E72A1ABADD0030F66C /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
 		7F65F2E82A1ABADD0030F66C /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		7F65F2ED2A1ABAEC0030F66C /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		7F6DCF642A21D459006E86D1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		7FAF4A692A19679D005CDD85 /* CDW-MemoryMatchCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDW-MemoryMatchCardGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */,
 				7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */,
 				7FAF4A702A19679D005CDD85 /* ViewController.swift */,
+				7F6DCF642A21D459006E86D1 /* Presenter.swift */,
 				7FAF4A852A197B45005CDD85 /* CardCollectionViewCell.swift */,
 				7FAF4A842A197AF0005CDD85 /* Model */,
 				7FF459592A19DD1A005AA471 /* Screens */,
@@ -192,6 +195,7 @@
 			files = (
 				7FAF4A712A19679D005CDD85 /* ViewController.swift in Sources */,
 				7FAF4A812A1975EC005CDD85 /* CardModel.swift in Sources */,
+				7F6DCF652A21D459006E86D1 /* Presenter.swift in Sources */,
 				7FAF4A832A1976D7005CDD85 /* Card.swift in Sources */,
 				7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */,
 				7FAF4A862A197B45005CDD85 /* CardCollectionViewCell.swift in Sources */,
