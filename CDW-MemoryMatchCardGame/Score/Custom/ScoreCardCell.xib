@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoreCardCell" id="gTV-IL-0wX" customClass="ScoreCardCell" customModule="CDW_MemoryMatchCardGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqK-R4-ZgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueWhale" translatesAutoresizingMaskIntoConstraints="NO" id="ugB-Id-7VI">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="1QC-4T-5CT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-05-7yu">
+                                <rect key="frame" x="0.0" y="165" width="250" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="box.truck" catalog="system" imagePlacement="trailing" title="Virtual Animal" imagePadding="10"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAS-SI-Lbr">
+                                <rect key="frame" x="195" y="125.66666666666667" width="50" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="speaker.wave.2.circle" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gTS-05-7yu" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" id="5Ql-V5-Qbc"/>
+                            <constraint firstAttribute="width" constant="250" id="BNk-OV-ytR"/>
+                            <constraint firstAttribute="bottom" secondItem="gTS-05-7yu" secondAttribute="bottom" id="FQs-io-8A6"/>
+                            <constraint firstItem="ugB-Id-7VI" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" id="PpD-0E-sbG"/>
+                            <constraint firstAttribute="trailing" secondItem="gTS-05-7yu" secondAttribute="trailing" id="R1a-Na-1fN"/>
+                            <constraint firstAttribute="trailing" secondItem="fAS-SI-Lbr" secondAttribute="trailing" constant="5" id="RcM-Xt-gc7"/>
+                            <constraint firstAttribute="height" constant="200" id="Tc9-JV-7Gv"/>
+                            <constraint firstAttribute="trailing" secondItem="ugB-Id-7VI" secondAttribute="trailing" id="U41-8T-XdB"/>
+                            <constraint firstItem="fAS-SI-Lbr" firstAttribute="bottom" secondItem="ugB-Id-7VI" secondAttribute="bottom" id="djW-4R-RnO"/>
+                            <constraint firstItem="gTS-05-7yu" firstAttribute="top" secondItem="ugB-Id-7VI" secondAttribute="bottom" constant="5" id="ifq-6Z-WLm"/>
+                            <constraint firstItem="ugB-Id-7VI" firstAttribute="top" secondItem="TqK-R4-ZgQ" secondAttribute="top" id="pQr-Iq-NTu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TqK-R4-ZgQ" secondAttribute="trailing" id="078-vK-xLA"/>
+                <constraint firstItem="TqK-R4-ZgQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VL4-05-WZi"/>
+                <constraint firstAttribute="bottom" secondItem="TqK-R4-ZgQ" secondAttribute="bottom" id="mB4-oT-UDO"/>
+                <constraint firstItem="TqK-R4-ZgQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="myY-Ah-V59"/>
+            </constraints>
+            <size key="customSize" width="150" height="169"/>
+            <point key="canvasLocation" x="206.10687022900763" y="30.281690140845072"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BlueWhale" width="158" height="224"/>
+        <image name="box.truck" catalog="system" width="128" height="90"/>
+        <image name="speaker.wave.2.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

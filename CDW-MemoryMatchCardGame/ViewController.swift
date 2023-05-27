@@ -64,16 +64,12 @@ extension ViewController : PresenterDelegate {
         collectionView.isUserInteractionEnabled = false
     }
     
+    #warning("need to check if no matched card pop up and allow to restart otherwise push to next screen")
     func didGameEnd(_ isUserWon: Bool) {
-        if isUserWon {
-            
-            // Show Won Messages Alert
-            showAlert(title: "Congratulations", message: "You have Won")
-        } else {
-           
-            // Show Lost Messages Alert
-            showAlert(title: "Game Over", message:  "You have lost")
-        }
+        /// Show score screen when game ends
+        let scoreVC = ScoreViewController()
+        scoreVC.configureScore(presenter.matchedCard)
+        navigationController?.pushViewController(scoreVC, animated: true)
     }
     
     func didCardMatches(_ firstFlippedCardIndex: IndexPath, _ secondFlippedCardIndex: IndexPath, _ isCardMatches: Bool) {

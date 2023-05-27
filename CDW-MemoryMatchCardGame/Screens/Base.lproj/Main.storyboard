@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Og6-l3-cjz">
     <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-YX-yQH">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <rect key="frame" x="0.0" y="44" width="736" height="370"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining : 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-wR-QgC">
                                         <rect key="frame" x="268" y="0.0" width="200" height="30"/>
@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tcv-Mf-EPa">
-                                        <rect key="frame" x="0.0" y="30" width="736" height="384"/>
+                                        <rect key="frame" x="0.0" y="30" width="736" height="340"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fzf-xk-6SK">
                                             <size key="itemSize" width="158" height="224"/>
@@ -95,6 +95,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KZV-YX-yQH" secondAttribute="bottom" id="zlJ-iW-Og9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uN4-kF-BIe"/>
                     <connections>
                         <outlet property="collectionView" destination="Tcv-Mf-EPa" id="IuQ-rI-WA9"/>
                         <outlet property="timerLabel" destination="L4w-wR-QgC" id="27k-rW-Igg"/>
@@ -102,12 +103,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="-27"/>
+            <point key="canvasLocation" x="901.63043478260875" y="-27.536231884057973"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T0Z-jO-Pzh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Og6-l3-cjz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.left" catalog="system" largeTitles="YES" id="vjZ-nI-pNf">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PYl-cK-MqK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qK5-c7-AIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80434782608697" y="-27.536231884057973"/>
         </scene>
     </scenes>
     <resources>
         <image name="CardBackground" width="159" height="224"/>
         <image name="GameBackground" width="320" height="201"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -19,6 +19,7 @@ final class Presenter {
     
     var model = CardModel()
     var cardArray = [Card]()
+    var matchedCard = [Card]()
     
     /// Track if the first card already been flipped. If empty it is a first card, else second card.
     var firstFlippedCardIndex : IndexPath?
@@ -114,6 +115,8 @@ final class Presenter {
             cardOne.isMatched = true
             cardTwo.isMatched = true
             
+            // Store matches card into array
+            matchedCard.append(cardOne)
             delegate?.didCardMatches(firstFlippedCardIndex, secondFlippedCardIndex, cardMatchStatus)
             
             SoundManager.playSound(.match)
