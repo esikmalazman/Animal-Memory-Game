@@ -29,11 +29,17 @@ final class CardModel {
                 
                 // Create 2 same card object because we need pair of card to match in the game
                 let cardOne = Card()
+                
                 cardOne.cardName = cardsDataSouce[randomNumbers]
+                cardOne.cardLabel = cardsDataSouceLabel[randomNumbers]
+                
+                
                 generatedCardsArray.append(cardOne)
                 
                 let cardTwo = Card()
+                
                 cardTwo.cardName = cardsDataSouce[randomNumbers]
+                cardTwo.cardLabel = cardsDataSouceLabel[randomNumbers]
                 generatedCardsArray.append(cardTwo)
             }
         }
@@ -45,5 +51,5 @@ final class CardModel {
     }
 }
 
-
 let cardsDataSouce = ["BlueWhale","HawksbillSeaTurtle", "JavaRhinoceros", "LittleBluePenguin", "PolarBear"]
+let cardsDataSouceLabel = ["Blue Whale","Hawksbill Sea Turtle", "Java Rhinoceros", "Little Blue Penguin", "Polar Bear"]

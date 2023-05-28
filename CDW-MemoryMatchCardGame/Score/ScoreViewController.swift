@@ -36,7 +36,9 @@ extension ScoreViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let card = scores[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScoreCardCell.identifier, for: indexPath) as! ScoreCardCell
+        cell.configureScoreCard(card)
         cell.delegate = self
         return cell
     }
@@ -44,10 +46,13 @@ extension ScoreViewController : UICollectionViewDataSource {
 
 extension ScoreViewController : ScoreCardCellDelegate {
     func didSelectPlaySound(_ card: Card) {
-        
+        SoundManager.playTextToSpeech(card.cardLabel)
     }
     
     func didSelectVirtualAnimal(_ card: Card) {
-        
+        let virtualAnimalsVC = VirtualAnimalsViewController()
+        virtualAnimalsVC.animalsName = card.cardName
+        virtualAnimalsVC.modalPresentationStyle = .fullScreen
+        navigationController?.present(virtualAnimalsVC, animated: true)
     }
 }

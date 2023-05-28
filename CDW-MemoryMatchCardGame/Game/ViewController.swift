@@ -9,9 +9,7 @@ import UIKit
 
 #warning("""
 TODO'S :
-1. Show new screen with correct match
-2. Allow to play how the animal pronounce
-3. OPTIONAL : Allow to view the animal in AR
+1. Refine design optional
 """)
 final class ViewController: UIViewController {
     

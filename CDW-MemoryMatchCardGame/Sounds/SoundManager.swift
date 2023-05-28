@@ -32,7 +32,8 @@ extension SoundEffect{
 
 final class SoundManager {
     
-   static var audioPlayer : AVAudioPlayer?
+    static var audioPlayer : AVAudioPlayer?
+  static  let syntesizer = AVSpeechSynthesizer()
     
     static func playSound(_ effect : SoundEffect) {
         // Create URL from file path of the sound
@@ -54,5 +55,14 @@ final class SoundManager {
         } catch {
             print("Could not play sound for sound file : \(effect.fileName), \(error.localizedDescription)")
         }
+    }
+    
+    static func playTextToSpeech(_ text : String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-IE")
+        utterance.rate = 0.2
+        utterance.volume = 0.8
+        
+        syntesizer.speak(utterance)
     }
 }

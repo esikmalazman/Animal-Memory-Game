@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -13,46 +13,71 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoreCardCell" id="gTV-IL-0wX" customClass="ScoreCardCell" customModule="CDW_MemoryMatchCardGame" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="250" height="220"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                <rect key="frame" x="0.0" y="0.0" width="250" height="220"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqK-R4-ZgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="220"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueWhale" translatesAutoresizingMaskIntoConstraints="NO" id="ugB-Id-7VI">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="160"/>
+                                <rect key="frame" x="5" y="0.0" width="240" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="1QC-4T-5CT"/>
+                                    <constraint firstAttribute="height" constant="130" id="1QC-4T-5CT"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-05-7yu">
-                                <rect key="frame" x="0.0" y="165" width="250" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="box.truck" catalog="system" imagePlacement="trailing" title="Virtual Animal" imagePadding="10"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-05-7yu">
+                                <rect key="frame" x="5" y="170.33333333333334" width="240" height="44.666666666666657"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Virtual Animal" image="box.truck" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="View Animals in AR" imagePadding="10" titleAlignment="leading">
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="5" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="virtualAnimalTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vvB-VG-Mqs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAS-SI-Lbr">
-                                <rect key="frame" x="195" y="125.66666666666667" width="50" height="34.333333333333329"/>
+                                <rect key="frame" x="205" y="5" width="35" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="QYq-xo-Y46"/>
+                                    <constraint firstAttribute="height" constant="35" id="cwH-Gk-zT0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="speaker.wave.2.circle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="speakerTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Eec-HY-Lsn"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue Whale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxV-4j-vGe">
+                                <rect key="frame" x="10" y="135" width="230" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gTS-05-7yu" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" id="5Ql-V5-Qbc"/>
+                            <constraint firstItem="BxV-4j-vGe" firstAttribute="top" secondItem="ugB-Id-7VI" secondAttribute="bottom" constant="5" id="062-Nr-hc3"/>
+                            <constraint firstItem="gTS-05-7yu" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" constant="5" id="5Ql-V5-Qbc"/>
+                            <constraint firstAttribute="bottom" secondItem="gTS-05-7yu" secondAttribute="bottom" constant="5" id="BNO-pW-JI5"/>
                             <constraint firstAttribute="width" constant="250" id="BNk-OV-ytR"/>
-                            <constraint firstAttribute="bottom" secondItem="gTS-05-7yu" secondAttribute="bottom" id="FQs-io-8A6"/>
-                            <constraint firstItem="ugB-Id-7VI" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" id="PpD-0E-sbG"/>
-                            <constraint firstAttribute="trailing" secondItem="gTS-05-7yu" secondAttribute="trailing" id="R1a-Na-1fN"/>
-                            <constraint firstAttribute="trailing" secondItem="fAS-SI-Lbr" secondAttribute="trailing" constant="5" id="RcM-Xt-gc7"/>
-                            <constraint firstAttribute="height" constant="200" id="Tc9-JV-7Gv"/>
-                            <constraint firstAttribute="trailing" secondItem="ugB-Id-7VI" secondAttribute="trailing" id="U41-8T-XdB"/>
-                            <constraint firstItem="fAS-SI-Lbr" firstAttribute="bottom" secondItem="ugB-Id-7VI" secondAttribute="bottom" id="djW-4R-RnO"/>
-                            <constraint firstItem="gTS-05-7yu" firstAttribute="top" secondItem="ugB-Id-7VI" secondAttribute="bottom" constant="5" id="ifq-6Z-WLm"/>
+                            <constraint firstItem="ugB-Id-7VI" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" constant="5" id="PpD-0E-sbG"/>
+                            <constraint firstAttribute="trailing" secondItem="BxV-4j-vGe" secondAttribute="trailing" constant="10" id="Qbl-t1-D2v"/>
+                            <constraint firstAttribute="trailing" secondItem="gTS-05-7yu" secondAttribute="trailing" constant="5" id="R1a-Na-1fN"/>
+                            <constraint firstItem="ugB-Id-7VI" firstAttribute="trailing" secondItem="fAS-SI-Lbr" secondAttribute="trailing" constant="5" id="RcM-Xt-gc7"/>
+                            <constraint firstAttribute="height" constant="220" id="TJA-Tr-klt"/>
+                            <constraint firstAttribute="trailing" secondItem="ugB-Id-7VI" secondAttribute="trailing" constant="5" id="U41-8T-XdB"/>
+                            <constraint firstItem="fAS-SI-Lbr" firstAttribute="top" secondItem="ugB-Id-7VI" secondAttribute="top" constant="5" id="UiP-68-rJu"/>
+                            <constraint firstItem="gTS-05-7yu" firstAttribute="top" secondItem="BxV-4j-vGe" secondAttribute="bottom" constant="10" id="ZzA-er-9o2"/>
+                            <constraint firstItem="BxV-4j-vGe" firstAttribute="leading" secondItem="TqK-R4-ZgQ" secondAttribute="leading" constant="10" id="oZ0-fP-x0c"/>
                             <constraint firstItem="ugB-Id-7VI" firstAttribute="top" secondItem="TqK-R4-ZgQ" secondAttribute="top" id="pQr-Iq-NTu"/>
                         </constraints>
                     </view>
@@ -65,13 +90,20 @@
                 <constraint firstAttribute="bottom" secondItem="TqK-R4-ZgQ" secondAttribute="bottom" id="mB4-oT-UDO"/>
                 <constraint firstItem="TqK-R4-ZgQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="myY-Ah-V59"/>
             </constraints>
-            <size key="customSize" width="150" height="169"/>
-            <point key="canvasLocation" x="206.10687022900763" y="30.281690140845072"/>
+            <size key="customSize" width="150" height="189"/>
+            <connections>
+                <outlet property="scoreCardImageView" destination="ugB-Id-7VI" id="B4L-V6-9u1"/>
+                <outlet property="scoreCardLabel" destination="BxV-4j-vGe" id="8em-gm-Cq7"/>
+                <outlet property="speakerBtn" destination="fAS-SI-Lbr" id="Nwr-Yh-QYM"/>
+                <outlet property="virtualAnimalBtn" destination="gTS-05-7yu" id="1bF-V7-lEf"/>
+            </connections>
+            <point key="canvasLocation" x="206.10687022900763" y="37.323943661971832"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="BlueWhale" width="158" height="224"/>
         <image name="box.truck" catalog="system" width="128" height="90"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="speaker.wave.2.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
