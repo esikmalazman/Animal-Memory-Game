@@ -17,6 +17,12 @@
 		7F6DCF6A2A21E0C4006E86D1 /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6DCF682A21E0C4006E86D1 /* ScoreViewController.xib */; };
 		7F6DCF6D2A21F875006E86D1 /* ScoreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCF6B2A21F875006E86D1 /* ScoreCardCell.swift */; };
 		7F6DCF6E2A21F875006E86D1 /* ScoreCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6DCF6C2A21F875006E86D1 /* ScoreCardCell.xib */; };
+		7F6DCF732A2294D1006E86D1 /* VirtualAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCF712A2294D1006E86D1 /* VirtualAnimalsViewController.swift */; };
+		7F9A23792A236FE4007872D7 /* PolarBear.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A23782A236FE4007872D7 /* PolarBear.usdz */; };
+		7F9A237D2A23730D007872D7 /* LittleBluePenguin.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A237C2A23730C007872D7 /* LittleBluePenguin.usdz */; };
+		7F9A23832A237504007872D7 /* JavanRhinoceros.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A23822A237504007872D7 /* JavanRhinoceros.usdz */; };
+		7F9A23872A237825007872D7 /* HawksbillSeaTurtle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A23862A237825007872D7 /* HawksbillSeaTurtle.usdz */; };
+		7F9A238B2A237981007872D7 /* BlueWhale.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A238A2A237981007872D7 /* BlueWhale.usdz */; };
 		7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */; };
 		7FAF4A6F2A19679D005CDD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */; };
 		7FAF4A712A19679D005CDD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A702A19679D005CDD85 /* ViewController.swift */; };
@@ -39,6 +45,12 @@
 		7F6DCF682A21E0C4006E86D1 /* ScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
 		7F6DCF6B2A21F875006E86D1 /* ScoreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCardCell.swift; sourceTree = "<group>"; };
 		7F6DCF6C2A21F875006E86D1 /* ScoreCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreCardCell.xib; sourceTree = "<group>"; };
+		7F6DCF712A2294D1006E86D1 /* VirtualAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualAnimalsViewController.swift; sourceTree = "<group>"; };
+		7F9A23782A236FE4007872D7 /* PolarBear.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PolarBear.usdz; sourceTree = "<group>"; };
+		7F9A237C2A23730C007872D7 /* LittleBluePenguin.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LittleBluePenguin.usdz; sourceTree = "<group>"; };
+		7F9A23822A237504007872D7 /* JavanRhinoceros.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = JavanRhinoceros.usdz; sourceTree = "<group>"; };
+		7F9A23862A237825007872D7 /* HawksbillSeaTurtle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = HawksbillSeaTurtle.usdz; sourceTree = "<group>"; };
+		7F9A238A2A237981007872D7 /* BlueWhale.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = BlueWhale.usdz; sourceTree = "<group>"; };
 		7FAF4A692A19679D005CDD85 /* CDW-MemoryMatchCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDW-MemoryMatchCardGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +106,18 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		7F9A238C2A2392C5007872D7 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A23782A236FE4007872D7 /* PolarBear.usdz */,
+				7F9A237C2A23730C007872D7 /* LittleBluePenguin.usdz */,
+				7F9A23822A237504007872D7 /* JavanRhinoceros.usdz */,
+				7F9A23862A237825007872D7 /* HawksbillSeaTurtle.usdz */,
+				7F9A238A2A237981007872D7 /* BlueWhale.usdz */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
 		7FAF4A602A19679D005CDD85 = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +142,12 @@
 				7FAF4A702A19679D005CDD85 /* ViewController.swift */,
 				7F6DCF642A21D459006E86D1 /* Presenter.swift */,
 				7FAF4A852A197B45005CDD85 /* CardCollectionViewCell.swift */,
+				7F6DCF712A2294D1006E86D1 /* VirtualAnimalsViewController.swift */,
 				7FAF4A842A197AF0005CDD85 /* Model */,
 				7FF459592A19DD1A005AA471 /* Screens */,
 				7F6DCF6F2A229397006E86D1 /* Score */,
 				7F65F2E42A1ABAC80030F66C /* Sounds */,
+				7F9A238C2A2392C5007872D7 /* Animals */,
 				7FAF4A752A19679F005CDD85 /* Assets.xcassets */,
 				7FAF4A7A2A19679F005CDD85 /* Info.plist */,
 			);
@@ -204,6 +230,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9A23832A237504007872D7 /* JavanRhinoceros.usdz in Resources */,
+				7F9A23872A237825007872D7 /* HawksbillSeaTurtle.usdz in Resources */,
 				7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */,
 				7F65F2EC2A1ABADD0030F66C /* dingwrong.wav in Resources */,
 				7F65F2EA2A1ABADD0030F66C /* dingcorrect.wav in Resources */,
@@ -212,7 +240,10 @@
 				7FAF4A792A19679F005CDD85 /* LaunchScreen.storyboard in Resources */,
 				7FAF4A762A19679F005CDD85 /* Assets.xcassets in Resources */,
 				7FAF4A742A19679D005CDD85 /* Main.storyboard in Resources */,
+				7F9A237D2A23730D007872D7 /* LittleBluePenguin.usdz in Resources */,
+				7F9A238B2A237981007872D7 /* BlueWhale.usdz in Resources */,
 				7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */,
+				7F9A23792A236FE4007872D7 /* PolarBear.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +261,7 @@
 				7FAF4A832A1976D7005CDD85 /* Card.swift in Sources */,
 				7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */,
 				7FAF4A862A197B45005CDD85 /* CardCollectionViewCell.swift in Sources */,
+				7F6DCF732A2294D1006E86D1 /* VirtualAnimalsViewController.swift in Sources */,
 				7F65F2EE2A1ABAEC0030F66C /* SoundManager.swift in Sources */,
 				7FAF4A6F2A19679D005CDD85 /* SceneDelegate.swift in Sources */,
 				7F6DCF692A21E0C4006E86D1 /* ScoreViewController.swift in Sources */,
@@ -382,6 +414,7 @@
 				DEVELOPMENT_TEAM = 66846BKCQ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CDW-MemoryMatchCardGame/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app need camera access to display the virtual animal in your room";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -411,6 +444,7 @@
 				DEVELOPMENT_TEAM = 66846BKCQ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CDW-MemoryMatchCardGame/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app need camera access to display the virtual animal in your room";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
