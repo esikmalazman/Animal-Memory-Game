@@ -23,6 +23,7 @@
 		7F5468E82A24774D007A46AA /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D52A2476F8007A46AA /* Inter-Light.ttf */; };
 		7F5468EB2A248662007A46AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5468E92A248662007A46AA /* LandingPageViewController.swift */; };
 		7F5468EC2A248662007A46AA /* LandingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468EA2A248662007A46AA /* LandingPageViewController.xib */; };
+		7F5468F12A24AE37007A46AA /* UICollectionViewCell + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5468F02A24AE36007A46AA /* UICollectionViewCell + Extensions.swift */; };
 		7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E52A1ABADD0030F66C /* shuffle.wav */; };
 		7F65F2EA2A1ABADD0030F66C /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */; };
 		7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E72A1ABADD0030F66C /* cardflip.wav */; };
@@ -63,6 +64,8 @@
 		7F5468DD2A2476F9007A46AA /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		7F5468E92A248662007A46AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		7F5468EA2A248662007A46AA /* LandingPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingPageViewController.xib; sourceTree = "<group>"; };
+		7F5468EF2A24AC0E007A46AA /* CREDITS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CREDITS.md; sourceTree = "<group>"; };
+		7F5468F02A24AE36007A46AA /* UICollectionViewCell + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell + Extensions.swift"; sourceTree = "<group>"; };
 		7F65F2E52A1ABADD0030F66C /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		7F65F2E72A1ABADD0030F66C /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
@@ -207,16 +210,18 @@
 		7FAF4A6B2A19679D005CDD85 /* CDW-MemoryMatchCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				7F5468EF2A24AC0E007A46AA /* CREDITS.md */,
 				7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */,
 				7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */,
+				7F5468F02A24AE36007A46AA /* UICollectionViewCell + Extensions.swift */,
 				7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */,
 				7FAF4A842A197AF0005CDD85 /* Model */,
 				7F9A238D2A23A558007872D7 /* Game */,
 				7F5468CA2A23A655007A46AA /* Score */,
 				7F5468ED2A24A6EB007A46AA /* Landing */,
+				7F9A238C2A2392C5007872D7 /* Animals */,
 				7FAF4A752A19679F005CDD85 /* Assets.xcassets */,
 				7FAF4A7A2A19679F005CDD85 /* Info.plist */,
-				7F9A238C2A2392C5007872D7 /* Animals */,
 				7F65F2E42A1ABAC80030F66C /* Sounds */,
 				7F5468DE2A2476FE007A46AA /* Fonts */,
 			);
@@ -327,6 +332,7 @@
 			files = (
 				7FAF4A712A19679D005CDD85 /* CardGameViewController.swift in Sources */,
 				7FAF4A812A1975EC005CDD85 /* CardModel.swift in Sources */,
+				7F5468F12A24AE37007A46AA /* UICollectionViewCell + Extensions.swift in Sources */,
 				7F6DCF652A21D459006E86D1 /* Presenter.swift in Sources */,
 				7FAF4A832A1976D7005CDD85 /* Card.swift in Sources */,
 				7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */,

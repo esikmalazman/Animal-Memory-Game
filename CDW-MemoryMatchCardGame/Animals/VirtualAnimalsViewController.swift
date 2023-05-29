@@ -16,9 +16,6 @@ final class VirtualAnimalsViewController: QLPreviewController {
         super.viewDidLoad()
         dataSource = self
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 }
 
 extension VirtualAnimalsViewController : QLPreviewControllerDataSource {

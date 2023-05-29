@@ -7,6 +7,14 @@
 
 import Foundation
 
+/*
+*    Title: How To Build a Match Game
+*    Author: Christopher Ching
+*    Date: 2019-07-05
+*    Code version: 1.0
+*    Availability: https://www.youtube.com/watch?v=ymQpuxCGptU&list=PLMRqhzcHGw1YdahNsCLZdSVfNv0stwvdx
+*
+*/
 final class CardModel {
     
     func getCards() -> [Card] {
