@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Card {
+struct Card {
     
     init(cardName : String = "", cardLabel : String = "") {
         self.cardName = cardName

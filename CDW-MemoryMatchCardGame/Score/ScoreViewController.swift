@@ -11,11 +11,13 @@ final class ScoreViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var resultsTitle: UILabel!
+    @IBOutlet weak var restartButton: UIButton!
     
     private (set) var scores = [Card]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        restartButton.layer.cornerRadius = 5
         collectionView.register(ScoreCardCell.nib(), forCellWithReuseIdentifier: ScoreCardCell.identifier)
         collectionView.dataSource = self
         collectionView.showsHorizontalScrollIndicator = false
@@ -24,8 +26,14 @@ final class ScoreViewController: UIViewController {
     func configureScore(_ matchesCard : [Card]) {
         scores = matchesCard
         loadViewIfNeeded()
-        resultsTitle.text = "You complete \(scores.count) matched cards, Congrats !!"
+        resultsTitle.text = "You complete \(scores.count) matches, Congrats !!"
         collectionView.reloadData()
+    }
+}
+
+extension ScoreViewController {
+    @IBAction func restartTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
 }
 

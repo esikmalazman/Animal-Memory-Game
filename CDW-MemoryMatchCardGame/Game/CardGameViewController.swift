@@ -7,29 +7,28 @@
 
 import UIKit
 
-#warning("""
-TODO'S :
-1. Refine design optional
-""")
-final class ViewController: UIViewController {
+final class CardGameViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let presenter = Presenter()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.getCards()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        presenter.getCards()
         presenter.delegate = self
     }
 }
 
 // MARK:  UICollectionViewDataSource
-extension ViewController : UICollectionViewDataSource {
+extension CardGameViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return presenter.cardArray.count
     }
@@ -44,7 +43,7 @@ extension ViewController : UICollectionViewDataSource {
 }
 
 // MARK:  UICollectionViewDelegate
-extension ViewController : UICollectionViewDelegate {
+extension CardGameViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Card on index : \(indexPath.row) selected")
         presenter.selectCards(atIndexPath: indexPath)
@@ -52,9 +51,9 @@ extension ViewController : UICollectionViewDelegate {
 }
 
 // MARK:  PresenterDelegate
-extension ViewController : PresenterDelegate {
+extension CardGameViewController : PresenterDelegate {
     func didTimerElapsed(_ title: String) {
-        timerLabel.text = "Time Remaining : \(title)"
+        timerLabel.text = title
     }
     
     func didTimeFinished() {
@@ -62,12 +61,20 @@ extension ViewController : PresenterDelegate {
         collectionView.isUserInteractionEnabled = false
     }
     
-    #warning("need to check if no matched card pop up and allow to restart otherwise push to next screen")
     func didGameEnd(_ isUserWon: Bool) {
-        /// Show score screen when game ends
-        let scoreVC = ScoreViewController()
-        scoreVC.configureScore(presenter.matchedCard)
-        navigationController?.pushViewController(scoreVC, animated: true)
+        if presenter.matchedCard.isEmpty {
+            showAlert(title: "Time's Up", message: "Sorry, better luck next time!") {
+                self.presenter.getCards()
+            } exitAction: {
+                self.navigationController?.popViewController(animated: true)
+            }
+        } else {
+            /// Show score screen when game ends
+            let scoreVC = ScoreViewController()
+            scoreVC.configureScore(presenter.matchedCard)
+            navigationController?.setNavigationBarHidden(true, animated: true)
+            navigationController?.pushViewController(scoreVC, animated: true)
+        }
     }
     
     func didCardMatches(_ firstFlippedCardIndex: IndexPath, _ secondFlippedCardIndex: IndexPath, _ isCardMatches: Bool) {
@@ -101,15 +108,28 @@ extension ViewController : PresenterDelegate {
         
         selectedCell.flip()
     }
+    
+    func renderCards() {
+        collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        collectionView.isUserInteractionEnabled = true
+        collectionView.reloadData()
+    }
 }
 
 // MARK:  Private
-private extension ViewController {
-    func showAlert(title: String, message: String) {
+private extension CardGameViewController {
+    func showAlert(title: String, message: String, retryAction : @escaping ()->Void = {}, exitAction : @escaping ()->Void = {}) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "OK", style: .default)
+        let alertRetryAction = UIAlertAction(title: "Retry", style: .default) { _ in
+            retryAction()
+        }
         
-        alert.addAction(alertAction)
+        let exitAction = UIAlertAction(title: "Exit", style: .default) { _ in
+            exitAction()
+        }
+        
+        alert.addAction(alertRetryAction)
+        alert.addAction(exitAction)
         self.present(alert, animated: true)
     }
 }

@@ -31,13 +31,14 @@ final class ScoreCardCell: UICollectionViewCell {
         super.awakeFromNib()
         layer.cornerRadius = 5
         scoreCardImageView.layer.cornerRadius = 5
+        virtualAnimalBtn.layer.cornerRadius = 5
         speakerBtn.layer.cornerRadius = 15
     }
     
     func configureScoreCard(_ card : Card) {
         self.card = card
         self.scoreCardLabel.text = card.cardLabel
-        self.scoreCardImageView.image = UIImage(named: card.cardName)
+        self.scoreCardImageView.image = UIImage(named: "\(card.cardName)Background")
     }
 
     @IBAction func speakerTapped(_ sender: UIButton) {

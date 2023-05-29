@@ -21,6 +21,8 @@
 		7F5468E62A24774D007A46AA /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468DC2A2476F8007A46AA /* Inter-Thin.ttf */; };
 		7F5468E72A24774D007A46AA /* LEIXO-DEMO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D42A2476EC007A46AA /* LEIXO-DEMO.ttf */; };
 		7F5468E82A24774D007A46AA /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D52A2476F8007A46AA /* Inter-Light.ttf */; };
+		7F5468EB2A248662007A46AA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5468E92A248662007A46AA /* LandingPageViewController.swift */; };
+		7F5468EC2A248662007A46AA /* LandingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468EA2A248662007A46AA /* LandingPageViewController.xib */; };
 		7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E52A1ABADD0030F66C /* shuffle.wav */; };
 		7F65F2EA2A1ABADD0030F66C /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */; };
 		7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E72A1ABADD0030F66C /* cardflip.wav */; };
@@ -35,7 +37,7 @@
 		7F9A238B2A237981007872D7 /* BlueWhale.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A238A2A237981007872D7 /* BlueWhale.usdz */; };
 		7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */; };
 		7FAF4A6F2A19679D005CDD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */; };
-		7FAF4A712A19679D005CDD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A702A19679D005CDD85 /* ViewController.swift */; };
+		7FAF4A712A19679D005CDD85 /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF4A702A19679D005CDD85 /* CardGameViewController.swift */; };
 		7FAF4A742A19679D005CDD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF4A722A19679D005CDD85 /* Main.storyboard */; };
 		7FAF4A762A19679F005CDD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF4A752A19679F005CDD85 /* Assets.xcassets */; };
 		7FAF4A792A19679F005CDD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */; };
@@ -59,6 +61,8 @@
 		7F5468DB2A2476F8007A46AA /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		7F5468DC2A2476F8007A46AA /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		7F5468DD2A2476F9007A46AA /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7F5468E92A248662007A46AA /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		7F5468EA2A248662007A46AA /* LandingPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingPageViewController.xib; sourceTree = "<group>"; };
 		7F65F2E52A1ABADD0030F66C /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		7F65F2E72A1ABADD0030F66C /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 		7FAF4A692A19679D005CDD85 /* CDW-MemoryMatchCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDW-MemoryMatchCardGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FAF4A702A19679D005CDD85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FAF4A702A19679D005CDD85 /* CardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameViewController.swift; sourceTree = "<group>"; };
 		7FAF4A732A19679D005CDD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FAF4A752A19679F005CDD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FAF4A782A19679F005CDD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,6 +135,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		7F5468ED2A24A6EB007A46AA /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				7F5468E92A248662007A46AA /* LandingPageViewController.swift */,
+				7F5468EA2A248662007A46AA /* LandingPageViewController.xib */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
 		7F65F2E42A1ABAC80030F66C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				7F9A238F2A23A5B7007872D7 /* Custom */,
-				7FAF4A702A19679D005CDD85 /* ViewController.swift */,
 				7F6DCF642A21D459006E86D1 /* Presenter.swift */,
+				7FAF4A702A19679D005CDD85 /* CardGameViewController.swift */,
+				7FAF4A722A19679D005CDD85 /* Main.storyboard */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -195,14 +209,15 @@
 			children = (
 				7FAF4A6C2A19679D005CDD85 /* AppDelegate.swift */,
 				7FAF4A6E2A19679D005CDD85 /* SceneDelegate.swift */,
+				7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */,
 				7FAF4A842A197AF0005CDD85 /* Model */,
-				7FF459592A19DD1A005AA471 /* Screens */,
 				7F9A238D2A23A558007872D7 /* Game */,
-				7F65F2E42A1ABAC80030F66C /* Sounds */,
 				7F5468CA2A23A655007A46AA /* Score */,
-				7F9A238C2A2392C5007872D7 /* Animals */,
+				7F5468ED2A24A6EB007A46AA /* Landing */,
 				7FAF4A752A19679F005CDD85 /* Assets.xcassets */,
 				7FAF4A7A2A19679F005CDD85 /* Info.plist */,
+				7F9A238C2A2392C5007872D7 /* Animals */,
+				7F65F2E42A1ABAC80030F66C /* Sounds */,
 				7F5468DE2A2476FE007A46AA /* Fonts */,
 			);
 			path = "CDW-MemoryMatchCardGame";
@@ -215,15 +230,6 @@
 				7FAF4A802A1975EC005CDD85 /* CardModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7FF459592A19DD1A005AA471 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				7FAF4A772A19679F005CDD85 /* LaunchScreen.storyboard */,
-				7FAF4A722A19679D005CDD85 /* Main.storyboard */,
-			);
-			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9A23832A237504007872D7 /* JavanRhinoceros.usdz in Resources */,
+				7F5468EC2A248662007A46AA /* LandingPageViewController.xib in Resources */,
 				7F9A23872A237825007872D7 /* HawksbillSeaTurtle.usdz in Resources */,
 				7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */,
 				7F5468E32A24774D007A46AA /* Inter-Regular.ttf in Resources */,
@@ -318,13 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAF4A712A19679D005CDD85 /* ViewController.swift in Sources */,
+				7FAF4A712A19679D005CDD85 /* CardGameViewController.swift in Sources */,
 				7FAF4A812A1975EC005CDD85 /* CardModel.swift in Sources */,
 				7F6DCF652A21D459006E86D1 /* Presenter.swift in Sources */,
 				7FAF4A832A1976D7005CDD85 /* Card.swift in Sources */,
 				7FAF4A6D2A19679D005CDD85 /* AppDelegate.swift in Sources */,
 				7FAF4A862A197B45005CDD85 /* CardCollectionViewCell.swift in Sources */,
 				7F6DCF732A2294D1006E86D1 /* VirtualAnimalsViewController.swift in Sources */,
+				7F5468EB2A248662007A46AA /* LandingPageViewController.swift in Sources */,
 				7F65F2EE2A1ABAEC0030F66C /* SoundManager.swift in Sources */,
 				7FAF4A6F2A19679D005CDD85 /* SceneDelegate.swift in Sources */,
 				7F5468D12A23A655007A46AA /* ScoreViewController.swift in Sources */,

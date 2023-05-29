@@ -28,15 +28,13 @@ final class CardModel {
                 print(randomNumbers)
                 
                 // Create 2 same card object because we need pair of card to match in the game
-                let cardOne = Card()
+                var cardOne = Card()
                 
                 cardOne.cardName = cardsDataSouce[randomNumbers]
                 cardOne.cardLabel = cardsDataSouceLabel[randomNumbers]
-                
-                
                 generatedCardsArray.append(cardOne)
                 
-                let cardTwo = Card()
+                var cardTwo = Card()
                 
                 cardTwo.cardName = cardsDataSouce[randomNumbers]
                 cardTwo.cardLabel = cardsDataSouceLabel[randomNumbers]
@@ -44,10 +42,8 @@ final class CardModel {
             }
         }
         
-        #warning("shuffle back when test done")
-        return generatedCardsArray
         //  Randomize the array by shuffle the position of elements
-        //  return generatedCardsArray.shuffled()
+        return generatedCardsArray.shuffled()
     }
 }
 

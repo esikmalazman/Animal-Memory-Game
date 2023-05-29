@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Og6-l3-cjz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CDW_MemoryMatchCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardGameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CardGameViewController" customModule="CDW_MemoryMatchCardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WjZ-BZ-iYB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameBackgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="WjZ-BZ-iYB">
                                 <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-YX-yQH">
-                                <rect key="frame" x="0.0" y="44" width="736" height="370"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-YX-yQH">
+                                <rect key="frame" x="5" y="5" width="726" height="409"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining : 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-wR-QgC">
-                                        <rect key="frame" x="268" y="0.0" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="K2j-V0-wgE"/>
-                                            <constraint firstAttribute="height" constant="30" id="tvu-UK-5ug"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <color key="textColor" systemColor="systemPinkColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-Lc-8ti">
+                                        <rect key="frame" x="310.66666666666669" y="0.0" width="105" height="69"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeGlass" translatesAutoresizingMaskIntoConstraints="NO" id="MdI-1S-OY9">
+                                                <rect key="frame" x="0.0" y="19.666666666666671" width="50" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Iwl-DY-aSU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-wR-QgC">
+                                                <rect key="frame" x="55" y="19.666666666666671" width="50" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="K2j-V0-wgE"/>
+                                                    <constraint firstAttribute="height" constant="30" id="tvu-UK-5ug"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <color key="textColor" name="SecondaryGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tcv-Mf-EPa">
-                                        <rect key="frame" x="0.0" y="30" width="736" height="340"/>
+                                        <rect key="frame" x="0.0" y="84" width="726" height="325"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fzf-xk-6SK">
                                             <size key="itemSize" width="158" height="224"/>
@@ -86,16 +101,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WjZ-BZ-iYB" secondAttribute="trailing" id="Icz-TH-gDn"/>
-                            <constraint firstItem="KZV-YX-yQH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mpx-hy-UMg"/>
-                            <constraint firstItem="KZV-YX-yQH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZSb-XB-8yi"/>
+                            <constraint firstItem="KZV-YX-yQH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="SFF-Gf-fhw"/>
+                            <constraint firstItem="KZV-YX-yQH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="ZSb-XB-8yi"/>
                             <constraint firstItem="WjZ-BZ-iYB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cSQ-OS-g4O"/>
                             <constraint firstAttribute="bottom" secondItem="WjZ-BZ-iYB" secondAttribute="bottom" id="qGy-rm-I09"/>
                             <constraint firstItem="WjZ-BZ-iYB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yOr-b8-Wrx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KZV-YX-yQH" secondAttribute="trailing" id="yb9-5x-2Rs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KZV-YX-yQH" secondAttribute="bottom" id="zlJ-iW-Og9"/>
+                            <constraint firstAttribute="trailing" secondItem="KZV-YX-yQH" secondAttribute="trailing" constant="5" id="yb9-5x-2Rs"/>
+                            <constraint firstAttribute="bottom" secondItem="KZV-YX-yQH" secondAttribute="bottom" id="zlJ-iW-Og9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uN4-kF-BIe"/>
+                    <navigationItem key="navigationItem" id="uN4-kF-BIe">
+                        <barButtonItem key="backBarButtonItem" title=" " id="B3C-p2-KUA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Tcv-Mf-EPa" id="IuQ-rI-WA9"/>
                         <outlet property="timerLabel" destination="L4w-wR-QgC" id="27k-rW-Igg"/>
@@ -105,34 +122,16 @@
             </objects>
             <point key="canvasLocation" x="901.63043478260875" y="-27.536231884057973"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="T0Z-jO-Pzh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Og6-l3-cjz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.left" catalog="system" largeTitles="YES" id="vjZ-nI-pNf">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PYl-cK-MqK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qK5-c7-AIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="128.80434782608697" y="-27.536231884057973"/>
-        </scene>
     </scenes>
     <resources>
         <image name="CardBackground" width="159" height="224"/>
-        <image name="GameBackground" width="320" height="201"/>
-        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="GameBackgrounds" width="320" height="201"/>
+        <image name="timeGlass" width="34" height="53"/>
+        <namedColor name="SecondaryGreen">
+            <color red="0.0" green="0.62352941176470589" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

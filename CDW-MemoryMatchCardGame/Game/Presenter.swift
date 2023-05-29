@@ -13,6 +13,7 @@ protocol PresenterDelegate : AnyObject {
     func didTimerElapsed(_ title : String)
     func didTimeFinished()
     func didGameEnd(_ isUserWon : Bool)
+    func renderCards()
 }
 
 final class Presenter {
@@ -39,8 +40,13 @@ final class Presenter {
     }
     
     weak var delegate : PresenterDelegate?
+
     
     func getCards() {
+        cardArray = []
+        matchedCard = []
+        miliseconds =  5 * 1000
+        
         SoundManager.playSound(.shuffle)
         
         cardArray = model.getCards()
@@ -52,6 +58,8 @@ final class Presenter {
                                      repeats: true)
         // Make the timer run even the user scroll or not, so timer not stop. By default, it will stop because it is on default RunLoop mode
         RunLoop.main.add(timer!, forMode: .tracking)
+        
+        delegate?.renderCards()
     }
     
     // Method will active everytime timer elapse from 1 miliseconds
@@ -74,7 +82,7 @@ final class Presenter {
     }
     
     func selectCards(atIndexPath indexPath: IndexPath) {
-         let selectedCard = cardArray[indexPath.row]
+        var selectedCard = cardArray[indexPath.row]
         
         // Flip or UnFlip the card
         if selectedCard.isFlipped == false && selectedCard.isMatched == false {
@@ -102,8 +110,8 @@ final class Presenter {
         }
         
         // Get the two cards object being revealed
-        let cardOne = cardArray[firstFlippedCardIndex.row]
-        let cardTwo = cardArray[secondFlippedCardIndex.row]
+        var cardOne = cardArray[firstFlippedCardIndex.row]
+        var cardTwo = cardArray[secondFlippedCardIndex.row]
         
         // Compare two cards
         let cardMatchStatus = cardOne.cardName == cardTwo.cardName
