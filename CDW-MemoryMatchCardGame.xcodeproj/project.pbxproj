@@ -11,6 +11,16 @@
 		7F5468D12A23A655007A46AA /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5468CC2A23A655007A46AA /* ScoreViewController.swift */; };
 		7F5468D22A23A655007A46AA /* ScoreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5468CE2A23A655007A46AA /* ScoreCardCell.swift */; };
 		7F5468D32A23A655007A46AA /* ScoreCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468CF2A23A655007A46AA /* ScoreCardCell.xib */; };
+		7F5468DF2A24774D007A46AA /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468DB2A2476F8007A46AA /* Inter-Medium.ttf */; };
+		7F5468E02A24774D007A46AA /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D62A2476F8007A46AA /* Inter-ExtraLight.ttf */; };
+		7F5468E12A24774D007A46AA /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D72A2476F8007A46AA /* Inter-Black.ttf */; };
+		7F5468E22A24774D007A46AA /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D92A2476F8007A46AA /* Inter-Bold.ttf */; };
+		7F5468E32A24774D007A46AA /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468DA2A2476F8007A46AA /* Inter-Regular.ttf */; };
+		7F5468E42A24774D007A46AA /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D82A2476F8007A46AA /* Inter-SemiBold.ttf */; };
+		7F5468E52A24774D007A46AA /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468DD2A2476F9007A46AA /* Inter-ExtraBold.ttf */; };
+		7F5468E62A24774D007A46AA /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468DC2A2476F8007A46AA /* Inter-Thin.ttf */; };
+		7F5468E72A24774D007A46AA /* LEIXO-DEMO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D42A2476EC007A46AA /* LEIXO-DEMO.ttf */; };
+		7F5468E82A24774D007A46AA /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F5468D52A2476F8007A46AA /* Inter-Light.ttf */; };
 		7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E52A1ABADD0030F66C /* shuffle.wav */; };
 		7F65F2EA2A1ABADD0030F66C /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */; };
 		7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F65F2E72A1ABADD0030F66C /* cardflip.wav */; };
@@ -39,6 +49,16 @@
 		7F5468CC2A23A655007A46AA /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		7F5468CE2A23A655007A46AA /* ScoreCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCardCell.swift; sourceTree = "<group>"; };
 		7F5468CF2A23A655007A46AA /* ScoreCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreCardCell.xib; sourceTree = "<group>"; };
+		7F5468D42A2476EC007A46AA /* LEIXO-DEMO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LEIXO-DEMO.ttf"; sourceTree = "<group>"; };
+		7F5468D52A2476F8007A46AA /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		7F5468D62A2476F8007A46AA /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7F5468D72A2476F8007A46AA /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		7F5468D82A2476F8007A46AA /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		7F5468D92A2476F8007A46AA /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		7F5468DA2A2476F8007A46AA /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		7F5468DB2A2476F8007A46AA /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		7F5468DC2A2476F8007A46AA /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		7F5468DD2A2476F9007A46AA /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		7F65F2E52A1ABADD0030F66C /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
 		7F65F2E62A1ABADD0030F66C /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		7F65F2E72A1ABADD0030F66C /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
@@ -92,6 +112,23 @@
 				7F5468CF2A23A655007A46AA /* ScoreCardCell.xib */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		7F5468DE2A2476FE007A46AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F5468D42A2476EC007A46AA /* LEIXO-DEMO.ttf */,
+				7F5468D72A2476F8007A46AA /* Inter-Black.ttf */,
+				7F5468D92A2476F8007A46AA /* Inter-Bold.ttf */,
+				7F5468DD2A2476F9007A46AA /* Inter-ExtraBold.ttf */,
+				7F5468D62A2476F8007A46AA /* Inter-ExtraLight.ttf */,
+				7F5468D52A2476F8007A46AA /* Inter-Light.ttf */,
+				7F5468DB2A2476F8007A46AA /* Inter-Medium.ttf */,
+				7F5468DA2A2476F8007A46AA /* Inter-Regular.ttf */,
+				7F5468D82A2476F8007A46AA /* Inter-SemiBold.ttf */,
+				7F5468DC2A2476F8007A46AA /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		7F65F2E42A1ABAC80030F66C /* Sounds */ = {
@@ -162,10 +199,11 @@
 				7FF459592A19DD1A005AA471 /* Screens */,
 				7F9A238D2A23A558007872D7 /* Game */,
 				7F65F2E42A1ABAC80030F66C /* Sounds */,
+				7F5468CA2A23A655007A46AA /* Score */,
 				7F9A238C2A2392C5007872D7 /* Animals */,
 				7FAF4A752A19679F005CDD85 /* Assets.xcassets */,
 				7FAF4A7A2A19679F005CDD85 /* Info.plist */,
-				7F5468CA2A23A655007A46AA /* Score */,
+				7F5468DE2A2476FE007A46AA /* Fonts */,
 			);
 			path = "CDW-MemoryMatchCardGame";
 			sourceTree = "<group>";
@@ -249,14 +287,24 @@
 				7F9A23832A237504007872D7 /* JavanRhinoceros.usdz in Resources */,
 				7F9A23872A237825007872D7 /* HawksbillSeaTurtle.usdz in Resources */,
 				7F65F2E92A1ABADD0030F66C /* shuffle.wav in Resources */,
+				7F5468E32A24774D007A46AA /* Inter-Regular.ttf in Resources */,
+				7F5468E12A24774D007A46AA /* Inter-Black.ttf in Resources */,
 				7F65F2EC2A1ABADD0030F66C /* dingwrong.wav in Resources */,
 				7F65F2EA2A1ABADD0030F66C /* dingcorrect.wav in Resources */,
 				7FAF4A792A19679F005CDD85 /* LaunchScreen.storyboard in Resources */,
+				7F5468E42A24774D007A46AA /* Inter-SemiBold.ttf in Resources */,
 				7F5468D32A23A655007A46AA /* ScoreCardCell.xib in Resources */,
+				7F5468E82A24774D007A46AA /* Inter-Light.ttf in Resources */,
 				7FAF4A762A19679F005CDD85 /* Assets.xcassets in Resources */,
+				7F5468DF2A24774D007A46AA /* Inter-Medium.ttf in Resources */,
 				7FAF4A742A19679D005CDD85 /* Main.storyboard in Resources */,
 				7F9A237D2A23730D007872D7 /* LittleBluePenguin.usdz in Resources */,
+				7F5468E22A24774D007A46AA /* Inter-Bold.ttf in Resources */,
+				7F5468E02A24774D007A46AA /* Inter-ExtraLight.ttf in Resources */,
+				7F5468E62A24774D007A46AA /* Inter-Thin.ttf in Resources */,
 				7F9A238B2A237981007872D7 /* BlueWhale.usdz in Resources */,
+				7F5468E72A24774D007A46AA /* LEIXO-DEMO.ttf in Resources */,
+				7F5468E52A24774D007A46AA /* Inter-ExtraBold.ttf in Resources */,
 				7F65F2EB2A1ABADD0030F66C /* cardflip.wav in Resources */,
 				7F5468D02A23A655007A46AA /* ScoreViewController.xib in Resources */,
 				7F9A23792A236FE4007872D7 /* PolarBear.usdz in Resources */,
