@@ -27,7 +27,7 @@ final class Presenter {
     var timer : Timer?
     /// Time give for user to complete the puzzle
     /// 10 seconds
-    var miliseconds : Float = 5 * 1000
+    var miliseconds : Float = 10 * 1000
     
     var isThereAnyTimeLeft : Bool {
         return miliseconds > 0
@@ -45,7 +45,7 @@ final class Presenter {
     func getCards() {
         cardArray = []
         matchedCard = []
-        miliseconds =  5 * 1000
+        miliseconds =  10 * 1000
         
         SoundManager.playSound(.shuffle)
         
